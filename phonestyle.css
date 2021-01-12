@@ -1,0 +1,163 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+
+.main{
+   width:100%;
+   height:100vh;
+   position:relative;
+   overflow:hidden;
+   background:linear-gradient(to right, #45b3947a, #00ff72d4);
+}
+
+nav{
+   display:flex;
+   width:80%;
+   position:sticky;
+   margin:auto;
+   z-index:1;
+   align-items:center;
+}
+
+.logo{
+   flex-basis:20%;
+}
+
+.logo img{
+   width:80px;
+   cursor:pointer;
+}
+
+.nav-links{
+   flex:1;
+   text-align:right;
+}
+
+.nav-links ul li{
+      display:inline-block;
+      list-style:none;
+      margin-left:30px;
+      
+}
+   
+.nav-links ul li a{
+      text-decoration:none;
+      color:#86863f;
+      font-size:21px;
+}  
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    transform: translateY(-50%);
+   
+}
+
+#circle{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+   // background: #4a2424;//
+    border-radius: 65%;
+    transform: rotate(0deg);
+    transistion: 1s;
+    
+}
+
+.feature img{
+     width:70px;
+}
+
+.feature{
+     position:absolute;
+     display:flex;
+     color:#fff;
+     overflow:hidden;
+}
+
+.one{
+   top:300px;
+   right:-150px;
+}
+
+.two{
+   top:100px;
+   left:250px;
+   transform:rotate(-90deg);
+}
+.three{
+   bottom:350px;
+   left:px;
+   transform:rotate(-180deg);
+   }
+
+.four{
+    bottom:100px;
+    right:180px;
+    transform:rotate(-270deg);
+}
+
+.feature div{
+    margin-left:20px;
+}
+
+.feature img{
+     margin-top:-15px;
+}
+.feature p{
+     margin-top:8px
+}
+
+.iphone{
+    width:200px;
+    position:absolute;
+    top:35%;
+    left:25%;
+    transform:translateY(-50%);
+    z-index:1;
+  }
+
+.controls{
+    position:absolute;
+    right:10%;
+    top:50%;
+    text-align:center;
+    transform:translateY(-50%);
+}
+
+.controls h3{
+    font-size:120%;
+    margin:15px 0;
+    color:#fff;
+
+}
+
+#up{
+   width:15px;
+   cursor:pointer;
+}
+
+#down{
+   cursor:pointer;
+   width:15px;
+   transform:roatate(180deg);
+}
+
+.overlay{
+   width: 0;
+   height:0;
+   border-top: 350px solid #fff;
+   border-right: 350px solid transparent;;
+   border-left: 350px solid #fff;
+   border-bottom: 350px solid #fff;
+   position:absolute;
+   left:0;
+   z-index:1;
+   top:0;
+}
+   

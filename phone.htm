@@ -1,0 +1,96 @@
+<!doctype>
+<html>
+<head>
+ <title>New Mobile</title>
+ <link href="phonestyle.css"  rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+     <nav>
+       <div class="logo">
+         <img src="img/logo1.png" alt="logo">
+       </div>
+       <div class="nav-links">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Cart</a></li>
+         </ul>       
+
+       </div>
+     
+     </nav>
+           
+            <div class="information">
+             
+             <div class="overlay"></div>
+              <img src="img/iphone.png" alt="iphone" class="iphone"> 
+             <div id="circle">
+                 <div class="feature one"> 
+                  <img src="img/camera.png" alt="camera">
+                    <div>
+                      <h3>Camera</h3>
+                      <p>12mp, wide angle lens</p>
+                    </div>
+                 </div>
+                 <div class="feature two">
+                   <img src="img/processor.png" alt="processor">
+                   <div> 
+                    <h3>Processor</h3>
+                    <p>Snapdragon Octa-core</p>
+                   </div>
+                 </div>
+                 <div class="feature three">
+                  <img src="img/display.png" alt="camera"> 
+                  <div>
+                  <h3>Display</h3>
+                  <p>6.5" Mini-drop fullscreen</p>
+                  </div>
+                  </div>
+                 <div class="feature four">
+                  <img src="img/battery.png" alt="camera">
+                   <div>
+                   <h3>battery Life</h3>
+                   <p>5000mAh, 720Hrs Standby</p>   
+                   </div>
+                 </div>
+             </div>
+
+            </div>
+         <div class="controls">
+           <img src="img/up.png" id="up">
+           <h3>Features</h3>
+           <img src="img/down.png" id="down" type="button"> 
+           <h4>click here to change the features</h4>    
+         </div>
+  </div>
+
+<script>
+ var circle = document.getElementById("circle");
+ var up = document.getElementById("up");
+ var down = document.getElementById("down");
+ 
+ var rotateValue = circle.style.transform;
+ var rotatesum;
+
+ up.onclick = function()
+{
+  rotateSum = rotateValue + "rotate(-90deg)";
+  circle.style.transform = rotateSum;
+  rotateValue = rotateSum;
+ }
+
+ down.onclick = function()
+{
+  rotateSum = rotateValue + "rotate(90deg)";
+  circle.style.transform = rotateSum;
+  rotateValue = rotateSum;
+ }
+
+</script>
+
+
+
+</body>
+</html>
